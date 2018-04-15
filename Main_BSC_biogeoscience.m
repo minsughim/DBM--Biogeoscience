@@ -16,7 +16,6 @@ global iniConcentrationGas iniConcentration
 %indexS = 0; %index for ensemble averages
 maximumThreadt = feature('numcores'); %number of cores for the parallel computing
 
-
 if pot1 == 0 % for the completly saturated case
     serial_id = sprintf('HT_BSC_satu_Day%d_index%d',examineDay, indexS);
     satuIndex = 1;
@@ -94,6 +93,7 @@ initCalcium = calciumF*100*10^(-3)/40; %%100 micro g/g
 % here by altering, CO2 fraction or average temperature
 pCO2frac = 1; % for the scenario of higher CO2 fraction
 avgT = 25; % the diurnal cycles of temperature is given with a sin function. Here, the avearge is given as 25 degree celcius.
+reducedLevelC = 0.1; % boundary condition for the nutrients
 
 %partial pressure of trace gases
 pN2 = 0.7809;

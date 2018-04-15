@@ -81,7 +81,6 @@ pGmin = 0.01;
 KsP = 1.4;
 KsI = 295;
 
-reducedLevelC = 0.1; % boundary condition for the nutrients
 NfixationR = 0.1; % Nitrgoen fixation
 repsiRatio = 0.1; % respiration rate of photoautotrophs is proportional to  
 germT = 1; % 1 hour: response delay rather than the germination time
